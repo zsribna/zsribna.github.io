@@ -1,0 +1,118 @@
+.hiden-option {
+  display: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+}
+label{
+	display: block;
+	padding-bottom: 4px;
+	font-weight: bold;
+}
+.wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+header{
+	background-color: #243b7f;
+	padding: 25px 0;
+}
+.header-container{
+	display: flex;
+	justify-content: center;
+}
+.logo{
+	align-self: center;
+	margin-right: 60px;
+}
+.name-faculty{
+	color: #fff;
+	text-align: center;
+	align-self: center;
+}
+.inputs{
+	text-align: center;
+	padding-top: 9px;
+}
+.filter-col{
+	text-align: center;
+	padding-top: 9px;
+}
+input:not([type="button"]), select{
+	width: 40%;
+	padding: 10px;
+	font-size: 20px;
+}
+#name_of_student{
+	padding: 10px 0;
+}
+.attention{
+	text-align: center;
+	margin-top: 20px;
+}
+.open-print{
+	width: 75%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+.open-print input{
+	padding: 20px;
+	border: none;
+	background-color: #243b7f;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	cursor: pointer;
+}
+.warning{
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 23px;
+	font-weight: bold;
+	color: #DC143C;
+}
+.attention{
+	color: #006400;
+	font-weight: bold;
+}
+@media screen and (max-width: 800px){
+	.open-print{
+		display: flex;
+		flex-direction: column;
+	}
+	.open-print input{
+		margin-top: 10px;
+	}
+	input:not([type="button"]), select{
+		width: 80%;
+	}
+	.name-faculty{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 425px){
+	.open-print input{
+		width: 100%;
+	}
+	input:not([type="button"]), select{
+		width: 100%;
+	}
+	body, .open-print input, .warning{
+		font-size: 16px;
+	}
+	.wrap{
+		width: 90%;
+	}
+	.logo{
+		margin-right: 5px;
+	}
+}
